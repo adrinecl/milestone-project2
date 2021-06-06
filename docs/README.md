@@ -111,3 +111,51 @@ This section illustrates the first draft of the website and how the information 
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [JavaScript ES6](https://en.wikipedia.org/wiki/JavaScript)
 
+<details>
+<summary>Frameworks, Libraries & Programs Used</summary>
+
+1. [Balsamiq](https://balsamiq.com/)
+    - Balsamiq was used in the conception and design process to create the [wireframes](https://github.com/adrinecl/milestone-project2/blob/master/docs/wireframes/gummy-worms-game-wireframe.png).
+
+2. [Coolors](https://coolors.co/)
+   - The website "Coolors" was used for the [color palette generation](https://coolors.co/f5d0e1-fe8c83-49baa7-c9fcd3-fae991) and the [color contrast checker](**ADD LINK LATER**) between text color and background color.
+
+3. [Google Fonts](https://fonts.google.com/)
+    - Google fonts were used to import the "Fredoka One" and "Roboto" fonts into the style.css file which is used throughout the whole project.
+
+4. [Font Awesome](https://fontawesome.com/)
+    - Font Awesome was used for the icons in the website, social media icons in the footer section and to add icons for aesthetic, visual metaphors and UX purposes.
+
+5. [Gitpod](https://www.gitpod.io/) 
+    - Gitpod was used for the development of the website, by running Visual Studio Code (VS Code) to edit code, commiting to Git and pushing to GitHub.
+
+6. [VS Code](https://code.visualstudio.com/)
+    - VS Code is used to edit the code on Gitpod.
+
+7. [Git](https://git-scm.com/)
+    - Git was used for version control with the Gitpod terminal to commit to Git and then push to GitHub.
+
+8. [GitHub](https://github.com/)
+    - GitHub is used to get the initial project template from Code Institute's repository. Then all of the incremental progress was documented through commits pushed to this ![GitHub repository](https://github.com/adrinecl/milestone-project2), where you can also find the code and files that belong the project. After being pushed from Git, the files are updated and the ![commit history](https://github.com/adrinecl/milestone-project2/commits/master) is available here. The website was also deployed to GitHub pages for the live demo.
+
+9. [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+   - Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. Used mainly for inspecting elements and the console, in order to fix layout issues and some other JavaScript bugs.
+
+10. [Am I Responsive?](http://ami.responsivedesign.is/)
+   - This website was used to check responsiveness and for the mockup generation in the beginning this README file.
+</details>
+
+## Testing
+
+### Validator Testing
+
+#### HTML
+No errors were returned when passing through the official [W3C Markup Validator]().
+- [W3C Markup Validator Results](**ADD LINK LATER**).
+#### CSS
+No errors were found when passing through the official [W3C CSS Validator]().
+- [W3C CSS Validator Results](**ADD LINK LATER**).
+
+### Test Cases
+
+[Test cases (user story based with screenshots)](https://github.com/adrinecl/milestone-project2/blob/master/docs/TESTING.md)
