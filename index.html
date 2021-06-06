@@ -23,11 +23,25 @@
         <div class="logo">
             <h1 id="logo">Gummy Worms!</h1>
         </div>
+        <div>
+            <p>
+                The sour candy version of the classic "Snake" game.
+            </p>
+            <p>
+                Play online now for free!
+            </p>
+        </div>
         <!-- This is the Main Menu -->
         <div id="mainMenu">
-            <button id="new-game">New Game</button>
-            <div>Level: <span id="level">1</span></div>
-            <div>Score: <span id="score">0</span></div>
+            <button id="new-game">New&nbsp;Game</button>
+            <div class="level"><div>Level</div><div id="level">1</div></div>
+            <div class="score"><div>Score</div><div id="score">0</div></div>
+            <div id="toggle-sound">
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up" style="display: none"></i>
+            </div>
+            <div id="leaderboard"><i class="fas fa-trophy"></i></div>
+            <div id="help"><i class="fas fa-question-circle"></i></div>
         </div>
         <!-- This is the Game Area -->
         <div id="game-area" class="game-area"></div>

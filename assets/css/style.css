@@ -30,25 +30,50 @@ body {
     padding-top: 50px;
 }
 
+body p {
+    text-align: center;
+}
+
 #mainMenu {
     display: flex;
     flex-direction: row;
     height: 80px;
-    margin: 20px auto;
-    width: 400px;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 442px;
 }
 
 #mainMenu button {
     background: none;
-    border: 1px solid gray;
-    padding: 0 20px;
+    color: #FE8C83;
+    font-family: "Fredoka One", cursive;
+    font-size: large;
     -webkit-appearance: none;
 }
 
 #mainMenu>div {
     height: 80px;
     line-height: 80px;
-    padding: 0 20px;
+    text-align: center;
+}
+
+#mainMenu i {
+    font-size: x-large;
+}
+
+#mainMenu .level,
+#mainMenu .score {
+    display: flex;
+    flex-direction: column;
+    font-family: "Fredoka One", cursive;
+    font-size: medium;
+    justify-content: center;
+    line-height: initial;
+}
+
+#level,
+#score {
+    font-size: x-large;
 }
 
 #game-area {
@@ -62,8 +87,8 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: calc(var(--rows) * 20px);
-    width: calc(var(--cols) * 20px);
+    height: calc(var(--rows) * 22px);
+    width: calc(var(--cols) * 22px);
 }
 
 .game-area.game-over {
@@ -72,9 +97,9 @@ body {
 }
 
 .game-area div {
-    height: 20px;
+    height: 22px;
     position: relative;
-    width: 20px;
+    width: 22px;
 }
 
 .game-area div[data-color='0'] {
