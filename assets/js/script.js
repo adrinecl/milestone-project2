@@ -60,10 +60,13 @@ class WormGame {
     }
 
     startNewLevel() {
+        this.candy = [];
         this.createNewWorm();
+        this.createNewCandy();
         this.resetArea();
         this.resetGrid();
         this.placeWorm();
+        this.placeCandy();
         this.resetGameTimer();
         this.startGameTimer();
     }
@@ -92,6 +95,28 @@ class WormGame {
         };
     }
 
+    createNewCandy() {
+        while (true) {
+            const row = this.randomRow(1);
+            const col = this.randomCol(1);
+            const cell = this.getCell(row, col);
+
+            if (cell.dataset.color) {
+                continue;
+            }
+            if (cell.dataset.candy) {
+                continue;
+            }
+
+            this.candy.push({
+                row: row,
+                col: col,
+                color: this.randomColor()
+            });
+            break;
+        }
+    }
+
     randomRow(inset) {
         return Math.floor(Math.random() * (this.rows - inset * 2)) + inset;
     }
@@ -111,6 +136,7 @@ class WormGame {
     resetGrid() {
         for (let cell of this.area.children) {
             delete cell.dataset.color;
+            delete cell.dataset.candy;
         }
     }
 
@@ -118,6 +144,13 @@ class WormGame {
         for (let part of this.worm.parts) {
             const cell = this.getCell(part.row, part.col);
             cell.dataset.color = part.color;
+        }
+    }
+
+    placeCandy() {
+        for (let candy of this.candy) {
+            const cell = this.getCell(candy.row, candy.col);
+            cell.dataset.candy = candy.color;
         }
     }
 
@@ -151,6 +184,23 @@ class WormGame {
             this.endGame();
             this.invokeCallback();
             return;
+        }
+
+        const candy = this.eatCandy();
+        if (candy) {
+            this.score += 1;
+            this.growTail(tail, candy);
+            this.createNewCandy();
+            this.placeCandy();
+            this.invokeCallback();
+        }
+
+        if (this.worm.parts.length == this.levelLengthGoal) {
+            this.level += 1;
+            this.levelLengthGoal += 5;
+            this.speed = Math.max(50, this.speed - 50);
+            this.startNewLevel();
+            this.invokeCallback();
         }
     }
 
@@ -204,6 +254,27 @@ class WormGame {
         const cell = this.getCell(tail.row, tail.col);
         delete cell.dataset.color;
         return tail;
+    }
+
+    growTail(tail, candy) {
+        const cell = this.getCell(tail.row, tail.col);
+        tail.color = candy.color;
+        this.worm.parts.push(tail);
+        cell.dataset.color = tail.color;
+    }
+
+    eatCandy() {
+        for (let i = 0; i < this.candy.length; i++) {
+            const head = this.worm.parts[0];
+            const item = this.candy[i];
+            const cell = this.getCell(item.row, item.col);
+            if (item.row == head.row && item.col == head.col) {
+                delete cell.dataset.candy;
+                this.candy.splice(i, 1);
+                return item;
+            }
+        }
+        return null;
     }
 
     isGameOver() {
