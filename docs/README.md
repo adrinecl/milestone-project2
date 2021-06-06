@@ -132,7 +132,7 @@ This section illustrates the first draft of the website and how the information 
 
 ###### Typography
 
-- The following fonts were chosen for this project: "Fredoka One" for the logo and headings and "Roboto" for the body, with the alternative of "sans-serif" as back-up. Available at [Google Fonts](https://fonts.google.com/specimen/Fredoka+One?preview.text=Gummy%20Worms&preview.text_type=custom&category=Serif,Display,Handwriting#pairings).
+- The following fonts were chosen for this project: "Fredoka One" for the logo and headings, with "cursive" as the back-up alternative and "Roboto" for the body, with the alternative of "sans-serif" as back-up. Available at [Google Fonts](https://fonts.google.com/specimen/Fredoka+One?preview.text=Gummy%20Worms&preview.text_type=custom&category=Serif,Display,Handwriting#pairings).
 
 ###### Imagery
 
