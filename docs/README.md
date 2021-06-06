@@ -138,7 +138,10 @@ This section illustrates the first draft of the website and how the information 
 
 - The overall design should be quite clean and straightforward with focus on the functionality, since the pastel and bright colors can be quite overpowering. The game should convey a sense of happiness, youth and nostalgia. If any other imagery is used, it should depict candy or icons as metaphors for the functionality of different buttons and other information relevant to the user.
 
-</details>
+###### Sound
+
+- The game should have the option to have different sounds on. The sounds should be triggered when a new game starts, a new level is reached, the sour candy worm character eats and the sour candy worm character dies.
+
 
 ## Implementation phase
 ### Features 
@@ -221,7 +224,10 @@ This section illustrates the first draft of the website and how the information 
 9. [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
    - Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. Used mainly for inspecting elements and the console, in order to fix layout issues and some other JavaScript bugs.
 
-10. [Am I Responsive?](http://ami.responsivedesign.is/)
+10. [Mixkit](https://mixkit.co/free-sound-effects/game/)
+   - This website provided the free sound effects used in the game.
+
+11. [Am I Responsive?](http://ami.responsivedesign.is/)
    - This website was used to check responsiveness and for the mockup generation in the beginning this README file.
 </details>
 
@@ -310,6 +316,7 @@ Main sources used for consultation and troubleshooting:
 #### Media
 
 - The media used on the website are free to use.[Pexels](https://www.pexels.com).
+- The free sound effects used in the game are from [Mixkit](https://mixkit.co/free-sound-effects/game/).
 
 ### Acknowledgements
 
