@@ -23,6 +23,7 @@ header {
 }
 
 body {
+    background-color: #fae991;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #49BAA7;
@@ -44,7 +45,7 @@ body {
     -webkit-appearance: none;
 }
 
-#mainMenu > div {
+#mainMenu>div {
     height: 80px;
     line-height: 80px;
     padding: 0 20px;
@@ -55,9 +56,9 @@ body {
 }
 
 .game-area {
-    background: rgb(230, 240, 255);
-    border: 2px solid black;
-    border-radius: 2px;
+    background: #9d7063;
+    border: 2px solid #9d7063;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -67,6 +68,7 @@ body {
 
 .game-area.game-over {
     background: rgba(230, 230, 230);
+    border: 2px solid black;
 }
 
 .game-area div {
@@ -75,23 +77,65 @@ body {
     width: 20px;
 }
 
-.game-area div[data-color='0'] { background: #f5d0e1; }
-.game-area div[data-color='1'] { background: #fe8c83; }
-.game-area div[data-color='2'] { background: #49baa7; }
-.game-area div[data-color='3'] { background: #c9fcd3; }
-.game-area div[data-color='4'] { background: #fae991; }
+.game-area div[data-color='0'] {
+    background: #f5d0e1;
+}
 
-.game-area.game-over div[data-color='0'] { background: gray; }
-.game-area.game-over div[data-color='1'] { background: gray; }
-.game-area.game-over div[data-color='2'] { background: gray; }
-.game-area.game-over div[data-color='3'] { background: gray; }
-.game-area.game-over div[data-color='4'] { background: gray; }
+.game-area div[data-color='1'] {
+    background: #fe8c83;
+}
 
-.game-area div[data-candy='0'] { background: #f5d0e1; }
-.game-area div[data-candy='1'] { background: #fe8c83; }
-.game-area div[data-candy='2'] { background: #49baa7; }
-.game-area div[data-candy='3'] { background: #c9fcd3; }
-.game-area div[data-candy='4'] { background: #fae991; }
+.game-area div[data-color='2'] {
+    background: #49baa7;
+}
+
+.game-area div[data-color='3'] {
+    background: #c9fcd3;
+}
+
+.game-area div[data-color='4'] {
+    background: #fae991;
+}
+
+.game-area.game-over div[data-color='0'] {
+    background: gray;
+}
+
+.game-area.game-over div[data-color='1'] {
+    background: gray;
+}
+
+.game-area.game-over div[data-color='2'] {
+    background: gray;
+}
+
+.game-area.game-over div[data-color='3'] {
+    background: gray;
+}
+
+.game-area.game-over div[data-color='4'] {
+    background: gray;
+}
+
+.game-area div[data-candy='0'] {
+    background: #f5d0e1;
+}
+
+.game-area div[data-candy='1'] {
+    background: #fe8c83;
+}
+
+.game-area div[data-candy='2'] {
+    background: #49baa7;
+}
+
+.game-area div[data-candy='3'] {
+    background: #c9fcd3;
+}
+
+.game-area div[data-candy='4'] {
+    background: #fae991;
+}
 
 /* Footer */
 /* The Footer section includes a flex box to organize all of the elements such as logo, social media links and contact information. */
