@@ -145,6 +145,45 @@ This section illustrates the first draft of the website and how the information 
 
 
 
+### Existing Features
+
+- __Main Menu section__
+
+  - The users can easily start a new game, by clicking on the "New Game" button on the menu right above the game area
+  - There the player will also find the status of their current game (level, player's nickname, current score), game settings (toggle sound on or off), be able to see the 10 highest scores on the Leaderboard and read more about the game controls, objectives, rules and the game itself, when accessing the "help" option.
+
+- __How to Play section__
+
+  - This section allows the user to get to know more about the game controls, objectives and rules, when accessing the "help" option.
+
+- __About the Game section__
+
+  - This section allows the user to get to know more about the game itself, when accessing the "help" option.
+
+- __Game Area__
+
+  - This section allows the user to play the game.
+
+- __The Footer__ 
+
+  - The footer includes the contact information and relevant social media links. The external social media links will open to a new tab to allow easy navigation for the user. 
+
+
+<details>
+<summary>Future features</summary>
+- The option to pre-select the level difficulty when starting a new game.
+- A page to create an account and keep your score history, so the player can see if they have improved over time.
+- A paid version with extra fun features added to the game.
+- A mobile app version.
+- Terms and conditions (related to the game, user license agreement etc).
+- Privacy Policy and Cookies.
+- Testimonials could also add value as social proof and encourage more people to play.
+</details>
+
+## Responsiveness
+
+- Responsive on all devices and screens sizes available on Chrome Device Mode (Chrome DevTools) for simulaton.
+
 ## Technologies Used
 
 ### Languages Used
