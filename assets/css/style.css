@@ -38,3 +38,46 @@ body {
     color: #49BAA7;
     padding-top: 50px;
 }
+
+#game-area {
+    margin: 50px auto;
+}
+
+.game-area {
+    background: rgb(230, 240, 255);
+    border: 2px solid black;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: calc(var(--rows) * 20px);
+    width: calc(var(--cols) * 20px);
+}
+
+.game-area.game-over {
+    background: rgba(230, 230, 230);
+}
+
+.game-area div {
+    height: 20px;
+    position: relative;
+    width: 20px;
+}
+
+.game-area div[data-color='0'] { background: #f5d0e1; }
+.game-area div[data-color='1'] { background: #fe8c83; }
+.game-area div[data-color='2'] { background: #49baa7; }
+.game-area div[data-color='3'] { background: #c9fcd3; }
+.game-area div[data-color='4'] { background: #fae991; }
+
+.game-area.game-over div[data-color='0'] { background: gray; }
+.game-area.game-over div[data-color='1'] { background: gray; }
+.game-area.game-over div[data-color='2'] { background: gray; }
+.game-area.game-over div[data-color='3'] { background: gray; }
+.game-area.game-over div[data-color='4'] { background: gray; }
+
+.game-area div[data-candy='0'] { background: #f5d0e1; }
+.game-area div[data-candy='1'] { background: #fe8c83; }
+.game-area div[data-candy='2'] { background: #49baa7; }
+.game-area div[data-candy='3'] { background: #c9fcd3; }
+.game-area div[data-candy='4'] { background: #fae991; }
