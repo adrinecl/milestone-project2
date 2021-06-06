@@ -38,7 +38,7 @@ Considering that there is no possibility to login and make a previous score bett
 <summary>Project Goals</summary>
 The purpose of this project is to build an interactive website, using JavaScript. The website should have fun colors and provide fun entertainment. The user should feel good about playing the game and want to play it again immediately after or at a later time.
 
-Although it is a simple game, in comparison to what is available today, this game has the nostalgic appeal of the classic "Snake" game. In this project, the main goal is to make sure that the user decides to play the game and can quicly figure out the controls and game mechanics. 
+Although it is a simple game, in comparison to what is available today, this game has the nostalgic appeal of the classic "Snake" game. In this project, the main goal is to make sure that the user decides to play the game and can quickly figure out the controls and game mechanics. 
 </details>
 
 <details>
@@ -55,7 +55,7 @@ While most people all over the world alrealdy know somewhat how to play this gam
 <details>
 <summary>Customer Goals</summary>
 Prospective players / first website visitors: get to know the "Gummy Worms" game, decide to play and enjoy the playing experience. The game should instill the desire to play again immediately after a game session or at a later time.
-One main goal is for the player to have such a fun experience that they will recommend to friends and family, by sharing the link to the game.
+One main goal is for the player to have such a fun experience that they will recommend it to friends and family, by sharing the link of the game.
 
 In the future, after testing the free version, the players might be able to have a paid version available with extra fun features.
 </details>
@@ -200,3 +200,82 @@ No errors were found when passing through the official [W3C CSS Validator]().
 ### Test Cases
 
 [Test cases (user story based with screenshots)](https://github.com/adrinecl/milestone-project2/blob/master/docs/TESTING.md)
+
+### Fixed Bugs
+
+Throughout the project some of the following bugs were fixed:
+
+- 
+- 
+
+### Unfixed Bugs
+
+- 
+- 
+- 
+
+### Supported Screens and Browsers
+
+- 
+- 
+- 
+
+## Deployment
+
+### Gitpod
+
+The project was deployed to Gitpod.
+
+These are the steps to deploy to GitHub Pages:
+
+1. Log in to GitHub and locate the GitHub Repository one wishes to deploy with Gitpod.
+2. At the top right of the Repository (not top of page), locate the "Gitpod" button.
+3. This will create a workspace on Gitpod for this project.
+4. Using the Terminal on Gitpod, type "python3 -m http.server".
+5. A blue button will pop on the bottom right of the screen with the options to make it public, open in preview or the browser (Port 8000).
+
+### Github Pages
+
+The project was deployed to GitHub Pages.
+
+These are the steps to deploy to GitHub Pages:
+
+1. Log in to GitHub and locate the GitHub Repository one wishes to deploy to GitHub Pages.
+2. At the top right of the Repository, locate the "Settings" button on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section on the menu to the left.
+4. Under "Source", click the "Branch" dropdown and select "Master" instead of "None".
+5. The page will automatically refresh and the link will be shown on top.
+
+
+## Credits
+
+### Code
+
+All code written by the developer, Adrine Curcio Lindström.
+
+### Resources
+
+Main sources used for consultation and troubleshooting:
+
+1. [W3Schools](https://www.w3schools.com/)
+- Mainly for CSS syntax help and troubleshooting.
+
+2. [MDN Web Docs](https://developer.mozilla.org/en-US/)
+- Mainly for CSS syntax help and troubleshooting.
+
+#### Content
+
+- All design choices, color palette and concept created by the developer.
+- All text content was written by the developer.
+
+#### Media
+
+- The media used on the website are free to use.[Pexels](https://www.pexels.com).
+
+### Acknowledgements
+
+I appreaciate the support, feedback and guidance of the following people throughout this project:
+
+- My mentor [Rohit Sharma](https://github.com/rohit0286).
+- My fellow colleagues for the support and encouragement on Slack.
+- The Tutor support and the whole staff at Code Institute for being so helpful and readily available on Slack and in general just making the Full-Stack Software Development Program possible.
