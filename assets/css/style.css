@@ -14,22 +14,12 @@ header {
 #logo {
     font-family: "Fredoka One", cursive;
     font-size: xx-large;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 50px;
     letter-spacing: 3px;
     color: #FE8C83;
     text-align: center;
     padding: 5px 0;
-}
-
-#logo-footer {
-    font-family: "Fredoka One", cursive;
-    font-size: medium;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 3px;
-    color: #FE8C83;
-    text-align: left;
 }
 
 body {
@@ -61,7 +51,7 @@ body {
 }
 
 #game-area {
-    margin: 10px auto;
+    margin: 10px auto 70px auto;
 }
 
 .game-area {
@@ -102,3 +92,60 @@ body {
 .game-area div[data-candy='2'] { background: #49baa7; }
 .game-area div[data-candy='3'] { background: #c9fcd3; }
 .game-area div[data-candy='4'] { background: #fae991; }
+
+/* Footer */
+/* The Footer section includes a flex box to organize all of the elements such as logo, social media links and contact information. */
+
+.container-footer {
+    height: 120px;
+    background-color: #C9FCD3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.container-footer div {
+    padding: 10px;
+    background-color: #C9FCD3;
+    text-align: center;
+    flex-grow: 1;
+}
+
+#logo-footer {
+    font-family: "Fredoka One", cursive;
+    font-size: x-large;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 3px;
+    color: #FE8C83;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #FE8C83;
+}
+
+#contact-footer {
+    font-family: "Fredoka One", cursive;
+    font-size: small;
+    font-weight: 100;
+    line-height: 50px;
+    letter-spacing: 3px;
+    color: #FE8C83;
+    text-align: center;
+    padding: 5px 0;
+}
