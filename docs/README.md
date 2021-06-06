@@ -36,14 +36,22 @@ Considering that there is no possibility to login and make a previous score bett
 
 <details>
 <summary>Project Goals</summary>
+The purpose of this project is to build an interactive website, using JavaScript. The website should have fun colors and provide fun entertainment. The user should feel good about playing the game and want to play it again immediately after or at a later time.
 
+Although it is a simple game, in comparison to what is available today, this game has the nostalgic appeal of the classic "Snake" game. In this project, the main goal is to make sure that the user decides to play the game and can quicly figure out the controls and game mechanics. 
 </details>
+
 <details>
 <summary>Business Goals</summary>
+The main goal of the website is to offer a game to attract players. 
+This is the first ever developed game for "Gummy Worms" and it runs on the browser.
+The game is free, but it is a good way to test for features before potentially developing it further or even creating a paid version. Developing and deploying a game in this manner can save time, by just "shipping it" with the MVP (minimun viable product) and later iterating and improving it little by little.
 
-
-**Audience:** 
+**Audience:** the game targets mainly busy nostalgic "millenials", that is people in the age range 25-40. 
+However, people of all ages can enjoy the game. Basic knowledge of English is helpful to read the instructions and "about section", but not a requirement to play.
+While most people all over the world alrealdy know somewhat how to play this game, due to the popularity of the "Snake" game in the old Nokia phones, our main audience consists of busy and nostalgic "millenial" parents. So our marketing language is adapted this group of people.
 </details>
+
 <details>
 <summary>Customer Goals</summary>
 
@@ -102,3 +110,4 @@ This section illustrates the first draft of the website and how the information 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [JavaScript ES6](https://en.wikipedia.org/wiki/JavaScript)
+
