@@ -82,3 +82,23 @@ This section illustrates the first draft of the website and how the information 
 
 
 ###### Typography
+
+- The following fonts were chosen for this project: "Fredoka One" for the logo and headings and "Roboto" for the body, with the alternative of "sans-serif" as back-up. Available at [Google Fonts](https://fonts.google.com/specimen/Fredoka+One?preview.text=Gummy%20Worms&preview.text_type=custom&category=Serif,Display,Handwriting#pairings).
+
+###### Imagery
+
+- The overall design should be quite clean and straightforward with focus on the functionality, since the pastel and bright colors can be quite overpowering. The game should convey a sense of happiness, youth and nostalgia. If any other imagery is used, it should depict candy or icons as metaphors for the functionality of different buttons and other information relevant to the user.
+
+</details>
+
+## Implementation phase
+### Features 
+
+
+
+## Technologies Used
+
+### Languages Used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [JavaScript ES6](https://en.wikipedia.org/wiki/JavaScript)
