@@ -3,6 +3,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     // This function is called each time the level, score or game over change.
     const callback = (level, score, gameOver) => {
+        document.getElementById('level').innerText = level;
+        document.getElementById('score').innerText = score;
         console.log(level, score, gameOver);
     };
     const gameArea = document.getElementById('game-area')
