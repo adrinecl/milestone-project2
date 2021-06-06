@@ -75,8 +75,8 @@ This section illustrates the first draft of the website and how the information 
 
 ###### Color Scheme
 
-- The colors chosen were .
-- These colors were chosen to represent the following keywords, respectively: 
+- The colors chosen were based on sour gummy worms candy colors. Light rose, coral, aquamarine, light mint and light yellow.
+- These colors were chosen to represent the following keywords, respectively: sweet, vintage (although "Tigerlilly" a more orange shade was the Pantone color of the year 2004), sour, fresh, happy/bright.
 
 ![Color Palette](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms-game-color-palette.png)
 
