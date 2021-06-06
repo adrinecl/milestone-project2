@@ -96,6 +96,14 @@ Other features can be implemented, like the paid version with extra fun features
 
 #### Structure
 
+The game is free and it runs on the browser on a single page so the user can stay on the website and not navigate away, providing few steps for the user to make a decision to play the game.
+
+The most importent content is large and centered, which is the game area.
+Other relevant information should be displayed in a consistent and intuitive manner right above the main game area, so that it grabs the attention of the user. 
+
+The users can easily start a new game, by clicking on the "New Game" button on the menu right above the game area. There the player will also find the status of their current game (level, player's nickname, current score), game settings (toggle sound on or off), be able to see the 10 highest scores on the Leaderboard and read more about the game controls, objectives, rules and the game itself, by accessing the "help" option.
+
+The footer shows extra contact information and social media links.
 
 
 #### Skeleton
