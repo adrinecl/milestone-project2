@@ -65,7 +65,7 @@ This section illustrates the first draft of the website and how the information 
 <summary>Wireframes</summary>
 
 - A first draft was sketched by hand on paper and then Balsamiq was used for the final wireframes.
-[Balsamiq wireframes](**ADD LINK**).
+[Balsamiq wireframes](https://github.com/adrinecl/milestone-project2/blob/master/docs/wireframes/gummy-worms-game-wireframe.png).
 
 
 </details>
@@ -78,7 +78,7 @@ This section illustrates the first draft of the website and how the information 
 - The colors chosen were .
 - These colors were chosen to represent the following keywords, respectively: 
 
-![Color Palette](**ADD LINK**)
+![Color Palette](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms-game-color-palette.png)
 
 
 ###### Typography
