@@ -39,8 +39,29 @@ body {
     padding-top: 50px;
 }
 
+#mainMenu {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    margin: 20px auto;
+    width: 400px;
+}
+
+#mainMenu button {
+    background: none;
+    border: 1px solid gray;
+    padding: 0 20px;
+    -webkit-appearance: none;
+}
+
+#mainMenu > div {
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+}
+
 #game-area {
-    margin: 50px auto;
+    margin: 10px auto;
 }
 
 .game-area {
