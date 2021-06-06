@@ -31,8 +31,27 @@ class WormGame {
         this.rows = rows;
         this.cols = cols;
         this.grid = {};
+        this.loadAudio();
         this.createGrid();
         this.callback = callback;
+        this.settings = {
+            audio: true
+        };
+    }
+
+    loadAudio() {
+        this.audio = {
+            eat_candy: new Audio('assets/audio/mixkit-unlock-game-notification-253.mp3'),
+            new_level: new Audio('assets/audio/mixkit-player-boost-recharging-2040.mp3'),
+            game_over: new Audio('assets/audio/mixkit-player-losing-or-failing-2042.mp3'),
+            worm_dead: new Audio('assets/audio/mixkit-arcade-space-shooter-dead-notification-272.mp3')
+        };
+    }
+
+    playAudio(name) {
+        if (this.settings.audio) {
+            this.audio[name].play();
+        }
     }
 
     createGrid() {
@@ -69,6 +88,7 @@ class WormGame {
         this.placeCandy();
         this.resetGameTimer();
         this.startGameTimer();
+        this.playAudio('new_level');
     }
 
     createNewWorm() {
@@ -158,6 +178,7 @@ class WormGame {
         this.gameOver = true;
         this.area.classList.add('game-over');
         this.resetGameTimer();
+        this.playAudio('game_over');
     }
 
     resetGameTimer() {
@@ -269,6 +290,7 @@ class WormGame {
             const item = this.candy[i];
             const cell = this.getCell(item.row, item.col);
             if (item.row == head.row && item.col == head.col) {
+                this.playAudio('eat_candy');
                 delete cell.dataset.candy;
                 this.candy.splice(i, 1);
                 return item;
