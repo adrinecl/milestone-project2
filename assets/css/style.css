@@ -27,7 +27,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #49BAA7;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 body p {
@@ -77,7 +77,7 @@ body p {
 }
 
 #game-area {
-    margin: 10px auto 70px auto;
+    margin: 10px auto 45px auto;
 }
 
 .game-area {
@@ -166,15 +166,16 @@ body p {
 /* The Footer section includes a flex box to organize all of the elements such as logo, social media links and contact information. */
 
 .container-footer {
-    height: 120px;
+    height: 80px;
     background-color: #C9FCD3;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 0 20px 0;
 }
 
 .container-footer div {
+    display: inline-block;
     padding: 10px;
     background-color: #C9FCD3;
     text-align: center;
@@ -182,17 +183,18 @@ body p {
 }
 
 #logo-footer {
+    display: inline-block;
     font-family: "Fredoka One", cursive;
     font-size: x-large;
     font-weight: 500;
-    line-height: 50px;
     letter-spacing: 3px;
     color: #FE8C83;
     text-align: left;
-    margin-left: 10px;
 }
 
 .social-networks {
+    display: inline-block;
+    margin-left: 10px;
     text-align: center;
 }
 
@@ -209,12 +211,26 @@ body p {
 }
 
 #contact-footer {
+    display: inline-block;
     font-family: "Fredoka One", cursive;
     font-size: small;
     font-weight: 100;
-    line-height: 50px;
     letter-spacing: 3px;
     color: #FE8C83;
     text-align: center;
-    padding: 5px 0;
+}
+
+#copyright-footer {
+    background-color: #C9FCD3;
+    padding: 5px;
+}
+
+#copyright-text {
+    font-family: "Roboto", sans-serif;
+    font-size: small;
+    font-weight: 400;
+    color: #FE8C83;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
 }
