@@ -31,3 +31,54 @@ As a [type of user], I want [an action] so that [a reason/a value]
 8. I want to have fun and feel inclined to play it again or at a later time.
 
 Considering that there is no possibility to login and make a previous score better at the moment, all users are considered "first time visitors".
+
+#### Strategy
+
+<details>
+<summary>Project Goals</summary>
+
+</details>
+<details>
+<summary>Business Goals</summary>
+
+
+**Audience:** 
+</details>
+<details>
+<summary>Customer Goals</summary>
+
+</details>
+
+#### Scope
+
+
+
+#### Structure
+
+
+
+#### Skeleton
+
+This section illustrates the first draft of the website and how the information will be presented.
+
+<details>
+<summary>Wireframes</summary>
+
+- A first draft was sketched by hand on paper and then Balsamiq was used for the final wireframes.
+[Balsamiq wireframes](**ADD LINK**).
+
+
+</details>
+
+#### Surface
+##### Design
+
+###### Color Scheme
+
+- The colors chosen were .
+- These colors were chosen to represent the following keywords, respectively: 
+
+![Color Palette](**ADD LINK**)
+
+
+###### Typography
