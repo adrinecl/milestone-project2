@@ -23,7 +23,7 @@ As a [type of user], I want [an action] so that [a reason/a value]
 **First Time Visitor Goals**
 1. As a First Time Visitor, I want to immediately understand the main purpose of the site. 
 2. I want to be able to quickly understand the game controls and mechanics in order to enjoy playing the game
-3. I want to find more information about the game and to be able to consult the instructions to the game. 
+3. I want to find more information about the game and to be able to consult the game instructions. 
 4. I want to be able to see my score as I play the game.
 5. I want to be able to be challenged with harder levels as I progress.
 6. I would like to play a simple game, with a fairly short play time, but high entertaining value.
@@ -45,20 +45,53 @@ Although it is a simple game, in comparison to what is available today, this gam
 <summary>Business Goals</summary>
 The main goal of the website is to offer a game to attract players. 
 This is the first ever developed game for "Gummy Worms" and it runs on the browser.
-The game is free, but it is a good way to test for features before potentially developing it further or even creating a paid version. Developing and deploying a game in this manner can save time, by just "shipping it" with the MVP (minimun viable product) and later iterating and improving it little by little.
+The game is free, but this is a good way to test for features before potentially developing it further or even creating a paid version. Developing and deploying a game in this manner can save time, by just "shipping it" with the MVP (minimun viable product) and later iterating and improving it little by little.
 
-**Audience:** the game targets mainly busy nostalgic "millenials", that is people in the age range 25-40. 
-However, people of all ages can enjoy the game. Basic knowledge of English is helpful to read the instructions and "about section", but not a requirement to play.
-While most people all over the world alrealdy know somewhat how to play this game, due to the popularity of the "Snake" game in the old Nokia phones, our main audience consists of busy and nostalgic "millenial" parents. So our marketing language is adapted this group of people.
+**Audience:** the game targets mainly busy nostalgic "millenials" - people in the age range 25-40. 
+However, people of all ages can enjoy the game. Basic knowledge of English is helpful to read the "instructions" and "about section", but not a requirement to play.
+While most people all over the world alrealdy know somewhat how to play this game, due to the popularity of the "Snake" game in the old Nokia phones, our main audience consists of busy and nostalgic "millenial" parents. Therefore our marketing language is adapted to this group of people.
 </details>
 
 <details>
 <summary>Customer Goals</summary>
+Prospective players / first website visitors: get to know the "Gummy Worms" game, decide to play and enjoy the playing experience. The game should instill the desire to play again immediately after a game session or at a later time.
+One main goal is for the player to have such a fun experience that they will recommend to friends and family, by sharing the link to the game.
 
+In the future, after testing the free version, the players might be able to have a paid version available with extra fun features.
 </details>
 
 #### Scope
 
+The scope defines which features will be implemented and which will not be implemented at this stage. 
+The following features will be included in the current project's scope:
+
+On the top there will be a menu with some game options, current status (level, player's nickname, current score), game settings (toggle sound on or off), access to the Leaderboard and access to the "help" section with more information about the game controls, objectives, rules and the game itself.
+In the middle and center of the page there will be the game area with the worm and "candy" for the worm to eat or obstacles to avoid.
+The footer should contain the social media links and contact information.
+
+- The design should be bright with pastel "candy-like" colors to signal fun and happiness.
+
+- **New Game:** The player should be able to clear the game area and start a "New Game" by clicking this button.
+
+- **Level:** The player should know what level they are currently playing and what to expect when it comes to how challenging the game is.
+
+- **Nickname:** The player should be able to see the chosen nickname, alternatively the randomly generated "Guest" nickname, which will be used for recording scores on the Leaderboard.
+
+- **Score:** The player should be able to see their score for the current game.
+
+- **Sound:** This is part of the game settings, where the player can toggle the sound icon on or off.
+
+- **Leaderboard:** Here the player can click to see the current Leaderboard with the 10 highest scores. It is represented with a trophy icon.
+
+- **Help:** Here the player can click to see the "About the Game" and "How to Play". It is represented with a question mark icon.
+
+- **About the Game:** This section should provide information about the game.
+
+- **How to Play:** This section provides information about the game controls, objectives, as well as other rules and instructions.
+
+- **Footer:** The footer should display links to social media and any contact information.
+
+Other features can be implemented, like the paid version with extra fun features. For more information on future features, see the "Future Features" section of this README file.
 
 
 #### Structure
