@@ -76,6 +76,32 @@ body p {
     font-size: x-large;
 }
 
+#sound {
+    display: none;
+}
+
+#toggle-sound label {
+    display: inline-block;
+    text-align: left;
+    width: 2rem;
+}
+
+#toggle-sound label:hover {
+    color: #FE8C83;
+}
+
+#toggle-sound .sound-on {
+    display: none;
+}
+
+#toggle-sound input[type="checkbox"]:checked ~ label .sound-on {
+    display: inline-block;
+}
+
+#toggle-sound input[type="checkbox"]:checked ~ label .sound-off {
+    display: none;
+}
+
 #game-area {
     margin: 10px auto 45px auto;
 }

@@ -16,12 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Connect the "New Game" button on the pagew to the wormGame.
+    // Connect the "New Game" button on the page to the wormGame.
     const newGame = document.getElementById('new-game');
     newGame.addEventListener('click', () => {
         wormGame.startNewGame();
         newGame.blur();
     });
+
+    // Connect the audio toggle on the page to the wormGame.
+    
+
 });
 
 class WormGame {
