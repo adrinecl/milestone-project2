@@ -34,14 +34,17 @@
         <!-- This is the Main Menu -->
         <div id="mainMenu">
             <button id="new-game">New&nbsp;Game</button>
+            <!-- This shows the current level -->
             <div class="level">
                 <div>Level</div>
                 <div id="level">1</div>
             </div>
+            <!-- This shows the current score -->
             <div class="score">
                 <div>Score</div>
                 <div id="score">0</div>
             </div>
+            <!-- This is the sound icon -->
             <div id="toggle-sound">
                 <input type="checkbox" id="sound">
                 <label for="sound">
@@ -49,8 +52,33 @@
                     <i class="fas fa-volume-up sound-on"></i>
                 </label>
             </div>
+            <!-- This is the leaderboard -->
             <div id="leaderboard"><i class="fas fa-trophy"></i></div>
-            <div id="help"><i class="fas fa-question-circle"></i></div>
+            <!-- This is the help icon -->
+            <div id="help" class="tooltip">
+                <i class="fas fa-question-circle"></i>
+                <span class="tooltiptext">
+                    <h2>About the Game</h2>
+
+                    <p>Gummy Worms is an online game designed specially for the nostalgic busy millenial parent, but
+                        people of all ages will find it easy-going and enjoyable.</p>
+
+                    <p>The game is inspired on the classic "Snake" game, but with a "zesty" spin! We unite all the
+                        goodness and simplicity of earlier times without the need to carry around a "brick"... erhum...
+                        I mean a Nokia cellphone, of course! :)</p>
+
+                    <h2>How to play</h2>
+                    <ul>
+                        <li>Choose New Game to start a new game.</li>
+                        <li>The gummy worm keeps moving forward on its own.</li>
+                        <li>Use your keyboard arrows <i class="far fa-caret-square-left"></i> and
+                            <i class="far fa-caret-square-right"></i> to turn left and right.</li>
+                        <li>Eat the candy and avoid eating yourself ;)</li>
+                        <li>Don't hit the walls!</li>
+                    </ul>
+                    </p>
+                </span>
+            </div>
         </div>
         <!-- This is the Game Area -->
         <div id="game-area" class="game-area">
@@ -94,6 +122,7 @@
                     <h2>hello@gummyworms.com</h2>
                 </div>
             </div>
+            <!-- Copyright information -->
             <div id="copyright-footer">
                 <p id="copyright-text">
                     Copyright © 2021 Adrine Curcio Lindström

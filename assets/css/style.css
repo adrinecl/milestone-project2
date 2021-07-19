@@ -40,7 +40,8 @@ body p {
     height: 80px;
     justify-content: space-between;
     margin: 10px auto;
-    width: 442px;
+    position: relative;
+    width: 444px;
 }
 
 #mainMenu button {
@@ -94,12 +95,56 @@ body p {
     display: none;
 }
 
-#toggle-sound input[type="checkbox"]:checked ~ label .sound-on {
+#toggle-sound input[type="checkbox"]:checked~label .sound-on {
     display: inline-block;
 }
 
-#toggle-sound input[type="checkbox"]:checked ~ label .sound-off {
+#toggle-sound input[type="checkbox"]:checked~label .sound-off {
     display: none;
+}
+
+/* Tooltip container */
+.tooltip {
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    background-color: #c9fcd3;
+    border-radius: 10px;
+    color: #49BAA7;
+    left: 0;
+    top: 90px;
+    line-height: 1;
+    padding: 30px;
+    position: absolute;
+    visibility: hidden;
+    width: 384px;
+    height: 384px;
+    z-index: 1;
+}
+
+.tooltiptext h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tooltiptext p {
+    text-align: justify;
+    margin-bottom: 8px;
+}
+
+.tooltiptext li {
+    text-align: justify;
+    margin-bottom: 8px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover {
+    color: #FE8C83;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
 #game-area {
