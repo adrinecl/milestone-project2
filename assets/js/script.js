@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const newGame = document.getElementById('new-game');
     newGame.addEventListener('click', () => {
         wormGame.startNewGame();
+        newGame.blur();
     });
 });
 
