@@ -154,7 +154,7 @@ class WormGame {
     }
 
     resetGrid() {
-        for (let cell of this.area.children) {
+        for (let cell of Object.values(this.grid)) {
             delete cell.dataset.color;
             delete cell.dataset.candy;
         }

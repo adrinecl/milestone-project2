@@ -89,11 +89,24 @@ body p {
     flex-wrap: wrap;
     height: calc(var(--rows) * 22px);
     width: calc(var(--cols) * 22px);
+    position: relative;
 }
 
 .game-area.game-over {
     background: rgba(230, 230, 230);
     border: 2px solid black;
+}
+
+.game-area .game-over {
+  color: black;
+  display: none;
+  font-family: "Fredoka One", cursive;
+  font-size: xxx-large;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 80px;
+  width: 100%;
 }
 
 .game-area div {
@@ -178,6 +191,14 @@ body p {
 .game-area div[data-candy='4'] {
     color: #fae991;
     transform: rotate(5deg);
+}
+
+.game-area.game-over div[data-candy='0'],
+.game-area.game-over div[data-candy='1'],
+.game-area.game-over div[data-candy='2'],
+.game-area.game-over div[data-candy='3'],
+.game-area.game-over div[data-candy='4'] {
+  color: black;
 }
 
 /* Footer */
