@@ -24,8 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Connect the audio toggle on the page to the wormGame.
-    
-
+    const soundToggle = document.getElementById('sound');
+    soundToggle.addEventListener('click', () => {
+        wormGame.settings.audio = soundToggle.checked;
+    });
 });
 
 class WormGame {
@@ -40,7 +42,7 @@ class WormGame {
         this.createGrid();
         this.callback = callback;
         this.settings = {
-            audio: true
+            audio: false
         };
     }
 
