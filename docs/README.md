@@ -248,10 +248,9 @@ No errors were found when passing through the official [W3C CSS Validator]().
 
 ### Fixed Bugs
 
-Throughout the project some of the following bugs were fixed:
+Throughout the project some bugs were fixed:
 
-- 
-- 
+[Fixed bugs](https://github.com/adrinecl/milestone-project2/blob/master/docs/TESTING.md)
 
 ### Unfixed Bugs
 
