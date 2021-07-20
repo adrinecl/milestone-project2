@@ -30,6 +30,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+class Leaderboard {
+    async fetch() {
+        const query = new Parse.Query('Leaderboard');
+        query.descending('Score');
+        query.limit(10);
+        const results = await query.find();
+        try {
+            this.scores = [];
+            for (const object of results) {
+                this.scores.push({
+                    nickname: object.get('Nickname'),
+                    score: object.get('Score')
+                });
+            }
+        } catch (error) {
+            console.error('Error while fetching the Leaderboard', error);
+        }
+    }
+
+    async saveScore(nickname, score) {
+        const row = new Parse.Object('Leaderboard');
+        row.set('Nickname', nickname);
+        row.set('Score', score);
+        try {
+          const result = await row.save();
+          console.log('Score saved', result);
+        } catch (error) {
+          console.error('Error while saving score to Leaderboard: ', error);
+        }
+    }
+}
+
 class WormGame {
     constructor(area, rows, cols, callback) {
         this.area = area;
@@ -307,7 +339,7 @@ class WormGame {
         const from = this.getCell(tail.row, tail.col);
         const cell = this.getCell(last.row, last.col);
         from.classList.remove('tail');
-    
+
         // Don't mark the cell as a tail cell if the head is already there,
         // that is that head has eaten the tail! We could handle this case in
         // the CSS as well, but it gets a bit messy with a lot of duplicated
@@ -316,14 +348,14 @@ class WormGame {
         if (!cell.classList.contains('head')) {
             cell.classList.add('tail');
         }
-    
+
         // Don't clear the body color of the cell that the tail used to be in,
         // if the head is now located there, because it will have overwritten
         // the color with its own, so clearing it here would mess with that.
         if (!from.classList.contains('head')) {
             delete from.dataset.color;
         }
-    
+
         return tail;
     }
 
