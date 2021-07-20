@@ -193,6 +193,48 @@ body p {
     width: 22px;
 }
 
+/* Worm styling (body shape)*/
+.game-area div[data-indir='0'][data-outdir='3'],
+.game-area div[data-indir='1'][data-outdir='2'] {
+    border-top-right-radius: 11px;
+}
+
+.game-area div[data-indir='0'][data-outdir='1'],
+.game-area div[data-indir='3'][data-outdir='2'] {
+    border-top-left-radius: 11px;
+}
+
+.game-area div[data-indir='2'][data-outdir='1'],
+.game-area div[data-indir='3'][data-outdir='0'] {
+    border-bottom-left-radius: 11px;
+}
+
+.game-area div[data-indir='2'][data-outdir='3'],
+.game-area div[data-indir='1'][data-outdir='0'] {
+    border-bottom-right-radius: 11px;
+}
+
+.game-area .head[data-indir='0'],
+.game-area .tail[data-outdir='2'] {
+    border-radius: 11px 11px 0px 0px;
+}
+
+.game-area .head[data-indir='1'],
+.game-area .tail[data-outdir='3'] {
+    border-radius: 0px 11px 11px 0px;
+}
+
+.game-area .head[data-indir='2'],
+.game-area .tail[data-outdir='0'] {
+    border-radius: 0px 0px 11px 11px;
+}
+
+.game-area .head[data-indir='3'],
+.game-area .tail[data-outdir='1'] {
+    border-radius: 11px 0px 0px 11px;
+}
+
+/* Worm styling (body segment colors)*/
 .game-area div[data-color='0'] {
     background: #f5d0e1;
 }
@@ -213,26 +255,16 @@ body p {
     background: #fae991;
 }
 
-.game-area.game-over div[data-color='0'] {
+/*Worm styling (Game Over colors)*/
+.game-area.game-over div[data-color='0'],
+.game-area.game-over div[data-color='1'],
+.game-area.game-over div[data-color='2'],
+.game-area.game-over div[data-color='3'],
+.game-area.game-over div[data-color='4']{
     background: gray;
 }
 
-.game-area.game-over div[data-color='1'] {
-    background: gray;
-}
-
-.game-area.game-over div[data-color='2'] {
-    background: gray;
-}
-
-.game-area.game-over div[data-color='3'] {
-    background: gray;
-}
-
-.game-area.game-over div[data-color='4'] {
-    background: gray;
-}
-
+/* Candy styling (shape)*/
 .game-area div[data-candy='0']::before,
 .game-area div[data-candy='1']::before,
 .game-area div[data-candy='2']::before,
@@ -246,6 +278,7 @@ body p {
     width: 22px;
 }
 
+/* Candy styling (colors and rotation)*/
 .game-area div[data-candy='0'] {
     color: #f5d0e1;
     transform: rotate(10deg);
@@ -271,6 +304,7 @@ body p {
     transform: rotate(5deg);
 }
 
+/* Candy styling (Game Over color)*/
 .game-area.game-over div[data-candy='0'],
 .game-area.game-over div[data-candy='1'],
 .game-area.game-over div[data-candy='2'],
