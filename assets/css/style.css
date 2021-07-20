@@ -121,7 +121,7 @@ body p {
     visibility: hidden;
     width: 384px;
     height: 384px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .tooltiptext h2 {

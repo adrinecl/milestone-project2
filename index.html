@@ -53,7 +53,14 @@
                 </label>
             </div>
             <!-- This is the leaderboard -->
-            <div id="leaderboard"><i class="fas fa-trophy"></i></div>
+            <div id="leaderboard" class="tooltip">
+                <i class="fas fa-trophy"></i>
+                <span class="tooltiptext">
+                    <h2>World Leaderboard</h2>
+
+
+                </span>
+            </div>
             <!-- This is the help icon -->
             <div id="help" class="tooltip">
                 <i class="fas fa-question-circle"></i>
@@ -133,8 +140,8 @@
         <!-- Back4App script (for the Leaderboard) -->
         <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
         <script type="text/javascript" type="text/javascript">
-          Parse.initialize("kVmwaEQKpmGPHOL8TvKofUgnKQB3msDSLfps6GXm", "JcU1XkGCV3ZO3NuHqXODdHU0fnS8NPgoQlmMYsC4");
-          Parse.serverURL = 'https://parseapi.back4app.com/'
+            Parse.initialize("kVmwaEQKpmGPHOL8TvKofUgnKQB3msDSLfps6GXm", "JcU1XkGCV3ZO3NuHqXODdHU0fnS8NPgoQlmMYsC4");
+            Parse.serverURL = 'https://parseapi.back4app.com/'
         </script>
 
         <!-- Font awesome script -->
