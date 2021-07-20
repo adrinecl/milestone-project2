@@ -162,9 +162,17 @@ class WormGame {
 
     resetGrid() {
         for (let cell of Object.values(this.grid)) {
-            delete cell.dataset.color;
-            delete cell.dataset.candy;
+            this.resetCell(cell);
         }
+    }
+
+    resetCell(cell) {
+        delete cell.dataset.color;
+        delete cell.dataset.candy;
+        delete cell.dataset.indir;
+        delete cell.dataset.outdir;
+        cell.classList.remove('head');
+        cell.classList.remove('tail');
     }
 
     placeWorm() {
@@ -172,6 +180,15 @@ class WormGame {
             const cell = this.getCell(part.row, part.col);
             cell.dataset.color = part.color;
         }
+
+        const head = this.worm.parts[0];
+        const tail = this.worm.parts[this.worm.parts.length - 1];
+        const headCell = this.getCell(head.row, head.col);
+        const tailCell = this.getCell(tail.row, tail.col);
+        headCell.classList.add('head');
+        tailCell.classList.add('tail');
+        headCell.dataset.indir = this.worm.direction;
+        tailCell.dataset.outdir = this.worm.direction;
     }
 
     placeCandy() {
@@ -261,9 +278,16 @@ class WormGame {
             color: head.color
         });
 
+        const from = this.getCell(head.row, head.col);
+        from.dataset.outdir = dir;
+        from.classList.remove('head');
+
         if (this.inGameArea(row, col)) {
             const cell = this.getCell(row, col);
             cell.dataset.color = head.color;
+            cell.dataset.indir = dir;
+            cell.dataset.outdir = dir;
+            cell.classList.add('head');
         }
     }
 
@@ -279,16 +303,40 @@ class WormGame {
 
     moveTail() {
         const tail = this.worm.parts.pop();
-        const cell = this.getCell(tail.row, tail.col);
-        delete cell.dataset.color;
+        const last = this.worm.parts[this.worm.parts.length - 1];
+        const from = this.getCell(tail.row, tail.col);
+        const cell = this.getCell(last.row, last.col);
+        from.classList.remove('tail');
+    
+        // Don't mark the cell as a tail cell if the head is already there,
+        // that is that head has eaten the tail! We could handle this case in
+        // the CSS as well, but it gets a bit messy with a lot of duplicated
+        // code, so to keep things simple, we only allow a cells to be either
+        // head or tail, but not both at the same time.
+        if (!cell.classList.contains('head')) {
+            cell.classList.add('tail');
+        }
+    
+        // Don't clear the body color of the cell that the tail used to be in,
+        // if the head is now located there, because it will have overwritten
+        // the color with its own, so clearing it here would mess with that.
+        if (!from.classList.contains('head')) {
+            delete from.dataset.color;
+        }
+    
         return tail;
     }
 
     growTail(tail, candy) {
+        const last = this.worm.parts[this.worm.parts.length - 1];
         const cell = this.getCell(tail.row, tail.col);
+        const from = this.getCell(last.row, last.col);
         tail.color = candy.color;
         this.worm.parts.push(tail);
         cell.dataset.color = tail.color;
+        cell.dataset.outdir = from.dataset.indir;
+        cell.classList.add('tail');
+        from.classList.remove('tail');
     }
 
     eatCandy() {
