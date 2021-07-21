@@ -36,7 +36,7 @@ body {
     padding: 0 20px;
 }
 
-#mainMenu {
+#main-menu {
     display: flex;
     flex-direction: row;
     height: 80px;
@@ -46,7 +46,7 @@ body {
     width: 444px;
 }
 
-#mainMenu button {
+#main-menu button {
     background: none;
     color: #FE8C83;
     font-family: "Fredoka One", cursive;
@@ -54,18 +54,18 @@ body {
     -webkit-appearance: none;
 }
 
-#mainMenu>div {
+#main-menu>div {
     height: 80px;
     line-height: 80px;
     text-align: center;
 }
 
-#mainMenu i {
+#main-menu i {
     font-size: x-large;
 }
 
-#mainMenu .level,
-#mainMenu .score {
+#main-menu .level,
+#main-menu .score {
     display: flex;
     flex-direction: column;
     font-family: "Fredoka One", cursive;
@@ -242,6 +242,20 @@ body {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+    z-index: 3;
+}
+
+.show-leaderboard #leaderboard,
+.show-help #help {
+    color: #FE8C83;
+}
+
+.show-leaderboard #leaderboard .tooltiptext {
+    display: block;
+}
+
+.show-help #help .tooltiptext {
+    display: block;
 }
 
 /* Game Area */
@@ -623,7 +637,7 @@ body {
         display: none;
     }
 
-    #mainMenu {
+    #main-menu {
         display: grid;
         gap: 0px 10px;
         grid-template-columns: 60px 60px 1fr auto auto;
@@ -636,7 +650,7 @@ body {
         width: 284px;
     }
 
-    #mainMenu button {
+    #main-menu button {
         font-size: x-large;
         line-height: 30px;
     }
@@ -645,11 +659,11 @@ body {
         grid-area: new-game;
     }
 
-    #mainMenu .level {
+    #main-menu .level {
         grid-area: level;
     }
 
-    #mainMenu .score {
+    #main-menu .score {
         grid-area: score;
     }
 

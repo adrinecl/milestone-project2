@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('level').innerText = level;
         document.getElementById('score').innerText = score;
     };
+
+    const mainMenu = document.getElementById('main-menu');
     const gameArea = document.getElementById('game-area');
     const wormGame = new WormGame(gameArea, 20, 20, callback);
 
@@ -52,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const submitButton = document.getElementById('submit-button');
     const newGame = document.getElementById('new-game');
     newGame.addEventListener('click', () => {
+        mainMenu.classList.remove('show-help');
+        mainMenu.classList.remove('show-leaderboard');
         submitNickname.disabled = false;
         submitButton.disabled = false;
         wormGame.startNewGame();
@@ -62,6 +66,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const soundToggle = document.getElementById('sound');
     soundToggle.addEventListener('click', () => {
         wormGame.settings.audio = soundToggle.checked;
+    });
+
+    // Connect the leaderboard toggle on the page to control the CSS class of the main area.
+    const toggleLeaderboard = document.getElementById('toggle-leaderboard');
+    toggleLeaderboard.addEventListener('click', () => {
+        mainMenu.classList.remove('show-help');
+        mainMenu.classList.toggle('show-leaderboard');
+    });
+
+    // Connect the help toggle on the page to control the CSS class of the main area.
+    const toggleHelp = document.getElementById('toggle-help');
+    toggleHelp.addEventListener('click', () => {
+        mainMenu.classList.toggle('show-help');
+        mainMenu.classList.remove('show-leaderboard');
     });
 
     // Connect the submit button to saving the score to the leaderboard.

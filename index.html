@@ -28,7 +28,7 @@
             Play online now for free!
         </div>
         <!-- This is the Main Menu -->
-        <div id="mainMenu">
+        <div id="main-menu">
             <button id="new-game">New&nbsp;Game</button>
             <!-- This shows the current level -->
             <div class="level">
@@ -42,7 +42,7 @@
             </div>
             <!-- This is the sound icon -->
             <div id="toggle-sound">
-                <input type="checkbox" id="sound">
+                <input type="checkbox" id="sound" aria-label="Sound">
                 <label for="sound">
                     <i class="fas fa-volume-mute sound-off"></i>
                     <i class="fas fa-volume-up sound-on"></i>
@@ -50,7 +50,7 @@
             </div>
             <!-- This is the leaderboard -->
             <div id="leaderboard" class="tooltip">
-                <i class="fas fa-trophy"></i>
+                <i id="toggle-leaderboard" class="fas fa-trophy" role="button" aria-label="Leaderboard"></i>
                 <span class="tooltiptext">
                     <h2>World Leaderboard</h2>
                     <table>
@@ -67,7 +67,7 @@
             </div>
             <!-- This is the help icon -->
             <div id="help" class="tooltip">
-                <i class="fas fa-question-circle"></i>
+                <i id="toggle-help" class="fas fa-question-circle" role="button" aria-label="About the game and instructions"></i>
                 <span class="tooltiptext">
                     <h2>About the Game</h2>
 
