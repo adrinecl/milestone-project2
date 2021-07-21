@@ -87,8 +87,10 @@ body p {
     width: 2rem;
 }
 
-#toggle-sound label:hover {
-    color: #FE8C83;
+@media (hover: hover) {
+    #toggle-sound label:hover {
+        color: #FE8C83;
+    }
 }
 
 #toggle-sound .sound-on {
@@ -166,6 +168,14 @@ body p {
     letter-spacing: 1px;
     padding: 5px 0;
     text-align: center;
+}
+
+#logo-about {
+    font-family: "Fredoka One", cursive;
+    font-size: medium;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #FE8C83;
 }
 
 .tooltiptext p {
