@@ -267,7 +267,7 @@ body {
     font-family: "Fredoka One", cursive;
     font-size: 48px;
     left: 0;
-    line-height: 440px;
+    line-height: 340px;
     position: absolute;
     text-align: center;
     top: 0;
@@ -284,6 +284,72 @@ body {
     height: 22px;
     position: relative;
     width: 22px;
+}
+
+/* Styling of the score submission form */
+
+#submit-form {
+    color: rgba(0, 0, 0, 0.7);
+    display: none;
+    font-family: "Fredoka One", cursive;
+    font-size: 18px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 270px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.game-area.game-over #submit-form {
+    display: block;
+}
+
+#submit-form p {
+    margin-bottom: 25px;
+    padding: 0 40px;
+}
+
+#submit-form input[type="text"] {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: inline-block;
+    color: white;
+    font-family: "Fredoka One", cursive;
+    font-size: large;
+    margin-right: 5px;
+    padding: 10px;
+    -webkit-appearance: none;
+}
+
+#submit-form input[type="button"] {
+    background: #FE8C83;
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    font-family: "Fredoka One", cursive;
+    font-size: large;
+    padding: 10px;
+    -webkit-appearance: none;
+}
+
+#submit-form input[type="button"]:hover {
+    background: white;
+    color: #FE8C83;
+}
+
+#submit-form input[type="button"]:active,
+#submit-form input[type="button"]:active:hover {
+    background: white;
+    color: black;
+}
+
+#submit-form input[type="button"]:disabled,
+#submit-form input[type="button"]:disabled:active,
+#submit-form input[type="button"]:disabled:active:hover {
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
 }
 
 /* Mobile on-screen controls */
@@ -613,7 +679,7 @@ body {
 
     .game-area .game-over {
         font-size: 32px;
-        line-height: 280px;
+        line-height: 200px;
     }
 
     .game-area div {
@@ -630,6 +696,25 @@ body {
         font-size: 14px;
         line-height: 14px;
         width: 14px;
+    }
+
+    #submit-form {
+        font-size: 14px;
+        top: 170px;
+    }
+
+    #submit-form p {
+        margin-bottom: 15px;
+        padding: 0 20px;
+    }
+
+    #submit-form input[type="text"] {
+        font-size: medium;
+        width: 130px;
+    }
+
+    #submit-form input[type="button"] {
+        font-size: medium;
     }
 
     #leaderboard table {

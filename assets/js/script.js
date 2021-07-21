@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const callback = (level, score, gameOver) => {
         document.getElementById('level').innerText = level;
         document.getElementById('score').innerText = score;
-        console.log(level, score, gameOver);
     };
     const gameArea = document.getElementById('game-area');
     const wormGame = new WormGame(gameArea, 20, 20, callback);
@@ -35,8 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Connect the "New Game" button on the page to the wormGame.
+    const submitNickname = document.getElementById('submit-nickname');
+    const submitButton = document.getElementById('submit-button');
     const newGame = document.getElementById('new-game');
     newGame.addEventListener('click', () => {
+        submitNickname.disabled = false;
+        submitButton.disabled = false;
         wormGame.startNewGame();
         newGame.blur();
     });
@@ -45,6 +48,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const soundToggle = document.getElementById('sound');
     soundToggle.addEventListener('click', () => {
         wormGame.settings.audio = soundToggle.checked;
+    });
+    
+    // Connect the submit button to saving the score to the leaderboard.
+    submitNickname.value = 'Gummy ' + Math.floor(Math.random() * 100000);
+    submitButton.addEventListener('click', () => {
+        if (!submitButton.disabled) {
+            leaderboard.saveScore(submitNickname.value, wormGame.score);
+            submitNickname.disabled = true;
+            submitButton.disabled = true;
+        }
     });
 });
 

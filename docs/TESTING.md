@@ -24,7 +24,7 @@
 ![Leaderboard](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_leaderboard.jpg)
 
 **8. I want to have fun and feel inclined to play it again or at a later time.**
-![Footer](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_footer.jpg)
+
 
 ### Fixed Bugs
 **1. "Game Over" screen issues**
