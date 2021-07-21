@@ -246,14 +246,17 @@ This section illustrates the first draft of the website and how the information 
 ### Validator Testing
 
 #### HTML
-No errors were returned when passing through the official [W3C Markup Validator]().
-- [W3C Markup Validator Results](**ADD LINK LATER**).
+No errors were returned when passing through the official [W3C Markup Validator](https://validator.w3.org/).
+The HTML validation passes without errors. There is one warning, with a suggestion that websites should not attempt to disable user zooming, which we do want so that we can keep the game area always visible.
+- [W3C Markup Validator Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fadrinecl.github.io%2Fmilestone-project2%2F).
 #### CSS
-No errors were found when passing through the official [W3C CSS Validator]().
-- [W3C CSS Validator Results](**ADD LINK LATER**).
+No errors were found when passing through the official [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+The CSS validation passes without errors, except for four errors that are caused by a bug in the W3C validation service. There are a few warning about unknown vendor extensions, used to control how buttons appear on iOS.
+[Bug report about the validator not supporting calc()](https://www.w3.org/Bugs/Public/show_bug.cgi?id=18913)
+- [W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fadrinecl.github.io%2Fmilestone-project2%2F&profile=css3svg&usermedium=all&warning=0&vextwarning=&lang=en).
 #### JavaScript
-No errors were found when passing through the official []().
-- [Validator Results](**ADD LINK LATER**).
+No errors were found when passing through [JSHint](https://jshint.com).
+JSHint was used to validate the JavaScript for the project. The code passed validation without errors and with two warnings that we are using modern JavaScript features (async functions). If there is a need to support older browsers, it might be necessary to address these. JSHint does not provide a link to the results.
 
 ### Test Cases
 
@@ -267,7 +270,8 @@ Throughout the project some bugs were fixed:
 
 ### Unfixed Bugs
 
-- 
+- On mobile (Safari) the sounds when eating the candy or dying are not working.
+- On mobile (Safari), double-tap to zoom should be disabled.
 
 ### Supported Screens and Browsers
 
