@@ -150,7 +150,7 @@ This section illustrates the first draft of the website and how the information 
 - __Main Menu section__
 
   - The users can easily start a new game, by clicking on the "New Game" button on the menu right above the game area
-  - There the player will also find the status of their current game (level, player's nickname, current score), game settings (toggle sound on or off), be able to see the 10 highest scores on the Leaderboard and read more about the game controls, objectives, rules and the game itself, when accessing the "help" option.
+  - There the player will also find the status of their current game (current level and score), game settings (toggle sound on or off), be able to see the 10 highest scores on the Leaderboard and read more about the game controls, objectives, rules and the game itself, when accessing the "help" option.
 
 - __How to Play section__
 
@@ -163,6 +163,12 @@ This section illustrates the first draft of the website and how the information 
 - __Game Area__
 
   - This section allows the user to play the game.
+
+- __Game Over screen__
+
+  - The "Game Over" screen shows how the player died and gives the opportunity to enter a nickname for a chance to record their score. If the player chooses to do so and in case their score belongs to the latest 10 highest scores, that score is then displayed on the leaderboard. Even if the score is not part of the 10 highest, it still gets saved, when a player chooses to submit.
+  - This was changed during the implementation phase, in order to provide less steps before a player could make a decision to start a new game. That is why the nickname is not displayed on the top menu like first planned during the planning phase and drafting (wireframes).
+  - There is also a random guest name generated and suggested (Gummy + random number) and the player has the option to change that name, but the score does not get saved under a random guest name if the player does not submit the score. The player can only submit a score once per game.
 
 - __The Footer__ 
 
