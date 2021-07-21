@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     soundToggle.addEventListener('click', () => {
         wormGame.settings.audio = soundToggle.checked;
     });
-    
+
     // Connect the submit button to saving the score to the leaderboard.
     submitNickname.value = 'Gummy ' + Math.floor(Math.random() * 100000);
     submitButton.addEventListener('click', () => {
@@ -111,6 +111,7 @@ class Leaderboard {
         try {
             const result = await row.save();
             console.log('Score saved', result);
+            await this.fetch();
         } catch (error) {
             console.error('Error while saving score to Leaderboard: ', error);
         }
