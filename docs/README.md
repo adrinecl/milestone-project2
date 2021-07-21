@@ -3,7 +3,7 @@
 [View the live project here.](https://adrinecl.github.io/milestone-project2/)
 
 
-![Responsive Mockup](**ADD LATER**)
+![Responsive Mockup](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_mockup.jpg)
 
 ## About the Game
 
@@ -272,6 +272,7 @@ Throughout the project some bugs were fixed:
 
 - On mobile (Safari) the sounds when eating the candy or dying are not working.
 - On mobile (Safari), double-tap to zoom should be disabled.
+- The footer does not stick to the bottom of the window for large displays.
 
 ### Supported Screens and Browsers
 
