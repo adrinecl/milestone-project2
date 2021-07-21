@@ -41,5 +41,6 @@
 
 **Solution provided**
 - The footer was set to display as column, stacking the information and the color change when hovering was turned off when a mouse/trackpad is not present.
-- 
+- The information in the help icon ("About the Game" and "How to Play") was moved below the game area in smaller screen sizes.
+- The leaderboard
 - On-screen game controls that work with touch screen were enabled when a mouse/trackpad is not present, since there is no CSS media query for keyboard. Therefore, unfortunately we cannot know for sure if a keyboard is present, but we estimate that if a mouse is not present, there is probably no keyboard available. It is not a sure-fire solution, but it is good enough for a MVP.

@@ -298,6 +298,7 @@ body {
     position: absolute;
     width: 80px;
     z-index: 1;
+    touch-action: manipulation;
 
     user-select: none;
     -webkit-touch-callout: none;

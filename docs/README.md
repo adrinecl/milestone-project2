@@ -171,9 +171,13 @@ This section illustrates the first draft of the website and how the information 
 
 <details>
 <summary>Future features</summary>
-- The option to pre-select the level difficulty when starting a new game.
+- The option to pre-select the size of the game area and the level difficulty when starting a new game.
 - A page to create an account and keep your score history, so the player can see if they have improved over time.
-- A paid version with extra fun features added to the game.
+- A paid version with extra fun features added to the game. Some special items could include being able to use some sort of potion to shorten the tail and make it easier to keep on playing for longer.
+- Some extra items like special candy in another shape that shows only for a limited amount of time and gives bonus points and / or shortens the Gummy Worm to make playing a bit easier for longer.
+- Some obstacles or items that "punish" the player for hitting them or eating them by mistake. These could for example lead to extra length of the Gummy Worm's tail without giving extra points, maybe even deducting points. Some of these features could depend on the difficult level chosen at the start.
+- Some levels could be a bonus with several pieces of candy and a timer, so the player has a chance to make the Gummy Worm eat the most candy in the time given.
+- Another feature could be giving the player the opportunity of saving and sharing a screen shot on social media before their demise, showing how long and colorful their Gummy Worm got, along with their level and score.
 - A mobile app version.
 - Terms and conditions (related to the game, user license agreement etc).
 - Privacy Policy and Cookies.
