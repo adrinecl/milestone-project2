@@ -182,7 +182,7 @@ class WormGame {
         this.gameOver = false;
         this.score = 0;
         this.level = 1;
-        this.levelLengthGoal = 5;
+        this.levelLengthGoal = 10;
         this.speed = 200;
         this.candy = [];
         this.createNewWorm();
@@ -350,8 +350,8 @@ class WormGame {
 
         if (this.worm.parts.length == this.levelLengthGoal) {
             this.level += 1;
-            this.levelLengthGoal += 5;
-            this.speed = Math.max(50, this.speed - 50);
+            this.levelLengthGoal += 10;
+            this.speed = Math.max(50, this.speed - 25);
             this.startNewLevel();
             this.invokeCallback();
         }
