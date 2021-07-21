@@ -173,6 +173,14 @@ body p {
     margin-bottom: 8px;
 }
 
+#help .fa-circle {
+    color: #FE8C83;
+    font-size: small;
+    font-weight: bold;
+    padding-right: 5px;
+    text-align: left;
+}
+
 .tooltiptext li {
     text-align: justify;
     line-height: 1.2;
@@ -180,18 +188,22 @@ body p {
     margin-bottom: 8px;
 }
 
-.tooltiptext i {
+#help .fa-caret-square-right,
+#help .fa-caret-square-left {
     padding: 0 4px;
+    font-size: medium;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover {
     color: #FE8C83;
 }
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
 
+/* Game Area */
 #game-area {
     margin: 10px auto 45px auto;
 }
@@ -236,6 +248,63 @@ body p {
     height: 22px;
     position: relative;
     width: 22px;
+}
+
+/* Mobile on-screen controls */
+
+#mobile-turn-left,
+#mobile-turn-right {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    bottom: 20px;
+    display: none;
+    height: 80px;
+    position: absolute;
+    width: 80px;
+    z-index: 1;
+
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+#mobile-turn-left::before,
+#mobile-turn-right::before {
+    color: rgba(255, 255, 255, 0.9);
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 50px;
+    font-weight: 900;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    width: 75px;
+}
+
+#mobile-turn-left {
+    left: 20px;
+}
+
+#mobile-turn-right {
+    right: 20px;
+}
+
+#mobile-turn-left::before {
+    content: '\f0d9';
+    margin-right: 5px;
+}
+
+#mobile-turn-right::before {
+    content: '\f0da';
+    margin-left: 5px;
+}
+
+@media (hover: none) {
+
+    #mobile-turn-left,
+    #mobile-turn-right {
+        display: block;
+    }
 }
 
 /* Worm styling (body shape)*/
@@ -305,7 +374,7 @@ body p {
 .game-area.game-over div[data-color='1'],
 .game-area.game-over div[data-color='2'],
 .game-area.game-over div[data-color='3'],
-.game-area.game-over div[data-color='4']{
+.game-area.game-over div[data-color='4'] {
     background: gray;
 }
 

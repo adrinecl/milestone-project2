@@ -15,6 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
             wormGame.keyDown(event.keyCode);
         }
     };
+    
+    // Connect the on-screen controls for mobiles and tablets to wormGame.
+    const turnL = document.getElementById('mobile-turn-left');
+    const turnR = document.getElementById('mobile-turn-right');
+    turnL.addEventListener('pointerdown', () => {
+        wormGame.keyDown(37);
+    });
+    turnR.addEventListener('pointerdown', () => {
+        wormGame.keyDown(39);
+    });
 
     // Connect the "New Game" button on the page to the wormGame.
     const newGame = document.getElementById('new-game');
@@ -54,10 +64,10 @@ class Leaderboard {
         row.set('Nickname', nickname);
         row.set('Score', score);
         try {
-          const result = await row.save();
-          console.log('Score saved', result);
+            const result = await row.save();
+            console.log('Score saved', result);
         } catch (error) {
-          console.error('Error while saving score to Leaderboard: ', error);
+            console.error('Error while saving score to Leaderboard: ', error);
         }
     }
 }
