@@ -249,12 +249,9 @@ body {
     color: #FE8C83;
 }
 
-.show-leaderboard #leaderboard .tooltiptext {
-    display: block;
-}
-
+.show-leaderboard #leaderboard .tooltiptext,
 .show-help #help .tooltiptext {
-    display: block;
+    visibility: visible;
 }
 
 /* Game Area */
