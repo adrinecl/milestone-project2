@@ -17,7 +17,6 @@ body {
     font-weight: 400;
     color: #49BAA7;
     padding-top: 10px;
-    touch-action: manipulation, pan-y;
 }
 
 #logo {
