@@ -12,7 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.onkeydown = (event) => {
         if (!event.repeat) {
-            wormGame.keyDown(event.keyCode);
+            if (wormGame.keyDown(event.keyCode)) {
+                event.preventDefault();
+            }
         }
     };
 
@@ -79,6 +81,7 @@ class WormGame {
         this.area = area;
         this.area.style.setProperty('--rows', rows);
         this.area.style.setProperty('--cols', cols);
+        this.gameOver = true;
         this.rows = rows;
         this.cols = cols;
         this.grid = {};
@@ -259,8 +262,13 @@ class WormGame {
     }
 
     keyDown(keyCode) {
-        if (keyCode == 37 || keyCode == 39) {
+        if (this.gameOver) {
+            return false;
+        } else if (keyCode == 37 || keyCode == 39) {
             this.turn = keyCode == 37 ? -1 : +1;
+            return true;
+        } else {
+            return false;
         }
     }
 

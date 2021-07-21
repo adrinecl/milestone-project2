@@ -11,6 +11,15 @@ header {
     width: 100%;
 }
 
+body {
+    background-color: #fae991;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #49BAA7;
+    padding-top: 10px;
+    touch-action: manipulation, pan-y;
+}
+
 #logo {
     font-family: "Fredoka One", cursive;
     font-size: xx-large;
@@ -22,16 +31,7 @@ header {
     padding: 5px 0;
 }
 
-body {
-    background-color: #fae991;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #49BAA7;
-    padding-top: 10px;
-    touch-action: manipulation, pan-y;
-}
-
-body p {
+#intro {
     text-align: center;
 }
 
@@ -117,7 +117,6 @@ body p {
 #leaderboard th {
     color: #49BAA7;
     font-family: "Fredoka One", cursive;
-    font-weight: bold;
     padding-bottom: 10px;
 }
 
@@ -184,7 +183,8 @@ body p {
     margin-bottom: 8px;
 }
 
-#help .fa-circle {
+#help .fa-circle,
+#mobile-help .fa-circle {
     color: #FE8C83;
     font-size: small;
     font-weight: bold;
@@ -192,7 +192,8 @@ body p {
     text-align: left;
 }
 
-.tooltiptext li {
+#help li,
+#mobile-help li {
     text-align: justify;
     line-height: 1.2;
     list-style: none;
@@ -200,9 +201,32 @@ body p {
 }
 
 #help .fa-caret-square-right,
-#help .fa-caret-square-left {
+#help .fa-caret-square-left,
+#mobile-help .fa-caret-square-right,
+#mobile-help .fa-caret-square-left {
     padding: 0 4px;
     font-size: medium;
+}
+
+#mobile-help {
+    display: none;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+#mobile-help h2 {
+    color: #FE8C83;
+    margin-bottom: 10px;
+    font-family: "Fredoka One", cursive;
+    font-size: x-large;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+#mobile-help p {
+    margin-bottom: 10px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -522,6 +546,64 @@ body p {
 }
 
 @media only screen and (max-width: 443px) {
+    #intro br {
+        display: none;
+    }
+
+    #mainMenu {
+        display: grid;
+        gap: 0px 10px;
+        grid-template-columns: 60px 60px 1fr auto auto;
+        grid-template-rows: 30px 80px;
+        grid-template-areas:
+            "new-game new-game new-game new-game new-game"
+            "level score . sound leaderboard";
+        height: auto;
+        margin: 15px auto 0 auto;
+        width: 284px;
+    }
+
+    #mainMenu button {
+        font-size: x-large;
+        line-height: 30px;
+    }
+
+    #new-game {
+        grid-area: new-game;
+    }
+
+    #mainMenu .level {
+        grid-area: level;
+    }
+
+    #mainMenu .score {
+        grid-area: score;
+    }
+
+    #toggle-sound {
+        grid-area: sound;
+    }
+
+    #leaderboard {
+        grid-area: leaderboard;
+    }
+
+    #help {
+        display: none;
+    }
+
+    #mobile-help {
+        display: block;
+    }
+
+    #contact-footer h2 {
+        font-size: 1.4em;
+    }
+
+    #game-area {
+        margin: 0 auto 45px auto;
+    }
+
     .game-area {
         height: calc(var(--rows) * 14px);
         width: calc(var(--cols) * 14px);
@@ -534,6 +616,7 @@ body p {
 
     .game-area div {
         height: 14px;
+        position: relative;
         width: 14px;
     }
 
@@ -545,5 +628,34 @@ body p {
         font-size: 14px;
         line-height: 14px;
         width: 14px;
+    }
+
+    #leaderboard table {
+        font-size: medium;
+        line-height: 1.2;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    #leaderboard th {
+        padding-bottom: 0px;
+    }
+
+    #leaderboard th:nth-child(2),
+    #leaderboard td:nth-child(2) {
+        width: 80px;
+    }
+
+    .tooltip .tooltiptext {
+        top: 110px;
+        padding: 15px 20px;
+        width: 240px;
+        height: 250px;
+    }
+
+    .tooltiptext h2 {
+        font-size: large;
+        margin-bottom: 5px;
+        padding: 0;
     }
 }
