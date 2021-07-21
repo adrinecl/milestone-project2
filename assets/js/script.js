@@ -7,8 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('score').innerText = score;
         console.log(level, score, gameOver);
     };
-    const gameArea = document.getElementById('game-area')
+    const gameArea = document.getElementById('game-area');
     const wormGame = new WormGame(gameArea, 20, 20, callback);
+
+    const leaderboardBody = document.getElementById('leaderboard-body');
+    const leaderboard = new Leaderboard(leaderboardBody);
+    leaderboard.fetch();
 
     document.onkeydown = (event) => {
         if (!event.repeat) {
@@ -45,6 +49,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 class Leaderboard {
+    constructor(tbody) {
+        this.tbody = tbody;
+    }
+
+    build() {
+        // Removes any existing tr from the tbody.
+        while (this.tbody.firstChild) {
+            this.tbody.removeChild(this.tbody.firstChild);
+        }
+
+        for (const entry of this.scores) {
+            const tr = document.createElement('tr');
+            const nickname = document.createElement('td');
+            const score = document.createElement('td');
+
+            nickname.innerText = entry.nickname;
+            score.innerText = entry.score;
+            tr.appendChild(nickname);
+            tr.appendChild(score);
+            this.tbody.appendChild(tr);
+        }
+    }
+
     async fetch() {
         const query = new Parse.Query('Leaderboard');
         query.descending('Score');
@@ -58,6 +85,7 @@ class Leaderboard {
                     score: object.get('Score')
                 });
             }
+            this.build();
         } catch (error) {
             console.error('Error while fetching the Leaderboard', error);
         }

@@ -33,6 +33,7 @@ body {
 
 #intro {
     text-align: center;
+    padding: 0 20px;
 }
 
 #mainMenu {
@@ -529,7 +530,7 @@ body {
 #copyright-text {
     font-family: "Roboto", sans-serif;
     font-size: small;
-    font-weight: 400;
+    font-weight: bold;
     color: #FE8C83;
     text-align: center;
     padding: 10px;
