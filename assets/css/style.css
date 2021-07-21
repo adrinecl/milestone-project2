@@ -478,7 +478,7 @@ body {
 .game-area.game-over div[data-color='2'],
 .game-area.game-over div[data-color='3'],
 .game-area.game-over div[data-color='4'] {
-    background: gray;
+    background: rgba(0, 0, 0, 0.15);
 }
 
 /* Candy styling (shape)*/
@@ -528,7 +528,7 @@ body {
 .game-area.game-over div[data-candy='2'],
 .game-area.game-over div[data-candy='3'],
 .game-area.game-over div[data-candy='4'] {
-    color: black;
+    color: rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
