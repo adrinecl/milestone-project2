@@ -36,7 +36,7 @@ Considering that there is no possibility to login and make a previous score bett
 
 <details>
 <summary>Project Goals</summary>
-The purpose of this project is to build an interactive website, using JavaScript. The website should have fun colors and provide fun entertainment. The user should feel good about playing the game and want to play it again immediately after or at a later time.
+The purpose of this project is to build an interactive website, using JavaScript. The website should have fun colors and provide good entertainment value. The user should feel good about playing the game and want to play it again immediately after or at a later time.
 
 Although it is a simple game, in comparison to what is available today, this game has the nostalgic appeal of the classic "Snake" game. In this project, the main goal is to make sure that the user decides to play the game and can quickly figure out the controls and game mechanics. 
 </details>
@@ -145,9 +145,6 @@ This section illustrates the first draft of the website and how the information 
 
 ## Implementation phase
 ### Features 
-
-
-
 ### Existing Features
 
 - __Main Menu section__
@@ -260,8 +257,6 @@ Throughout the project some bugs were fixed:
 
 ### Unfixed Bugs
 
-- 
-- 
 - 
 
 ### Supported Screens and Browsers

@@ -25,9 +25,21 @@
 - Another bug that happened when the "Game Over" message was presented, included the position of the last candy that was not succesfully eaten at the time of the death of the worm character. The candy could also end up covering part of the text. See image below as an example.
 ![Game Over screen - test 2](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_game-over2.jpg)
 
-**Solution provided**
-The z-index of the "Game Over" message was changed so that it shows on top of the other elements. The text of the message had some opacity added to it and the message was also styled and centered on the game area.
+**Solution 1 provided**
+- The z-index of the "Game Over" message was changed so that it shows on top of the other elements. The text of the message had some opacity added to it and the message was also styled and centered on the game area.
 ![Game Over screen - solution](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_game-over3.jpg)
 
+- However, another problem appeared when clicking on the leaderboard or the help icons.
+![Game Over screen - more testing after solution1](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_game-over4.jpg)
+
+**Solution 2 provided**
+- This problem was solved by changing the z-index of the leaderboard and help icons to a z-index of 2, that is layered "on top" of the "Game Over" screen.
+
 **2. Responsiveness and mobile controls**
+- When opening the game on a mobile, there were some issues with the footer, the hover of the sound toggle stayed on, the leaderboard and help icons were not clickable and there was the need for special game controls adapted for mobile that worked with touchscreens instead of the keyboard arrows.
 ![Mobile responsiveness - test 1](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_mobile1.jpg)
+
+**Solution provided**
+- The footer was set to display as column, stacking the information and the color change when hovering was turned off when a mouse/trackpad is not present.
+- 
+- On-screen game controls that work with touch screen were enabled when a mouse/trackpad is not present, since there is no CSS media query for keyboard. Therefore, unfortunately we cannot know for sure if a keyboard is present, but we estimate that if a mouse is not present, there is probably no keyboard available. It is not a sure-fire solution, but it is good enough for a MVP.
