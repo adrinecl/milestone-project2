@@ -13,13 +13,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const leaderboard = new Leaderboard(leaderboardBody);
     leaderboard.fetch();
 
-    document.onkeydown = (event) => {
+    // Connect keyboard (arrow) key events as input to the wormGame.
+    document.addEventListener('keydown', (event) => {
         if (!event.repeat) {
             if (wormGame.keyDown(event.keyCode)) {
                 event.preventDefault();
             }
         }
-    };
+    });
+
+    // Connect pointer events in the game-control area as input to the wormGame.
+    const gameControl = document.getElementById('game-control');
+    document.addEventListener('pointerdown', (event) => {
+        const x = event.pageX;
+        const w = document.body.clientWidth;
+        const keyCode = x < w / 2 ? 37 : 39;
+        if (gameControl.contains(event.target)) {
+            if (wormGame.keyDown(keyCode)) {
+                event.preventDefault();
+            }
+        }
+    });
 
     // Connect the on-screen controls for mobiles and tablets to wormGame.
     const turnL = document.getElementById('mobile-turn-left');
