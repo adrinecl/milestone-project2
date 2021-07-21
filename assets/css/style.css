@@ -370,64 +370,6 @@ body {
     color: white;
 }
 
-/* Mobile on-screen controls */
-
-#mobile-turn-left,
-#mobile-turn-right {
-    background: rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    bottom: 20px;
-    display: none;
-    height: 80px;
-    position: absolute;
-    width: 80px;
-    z-index: 1;
-    touch-action: manipulation;
-
-    user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-}
-
-#mobile-turn-left::before,
-#mobile-turn-right::before {
-    color: rgba(255, 255, 255, 0.9);
-    display: block;
-    font-family: 'Font Awesome 5 Free';
-    font-size: 50px;
-    font-weight: 900;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    width: 75px;
-}
-
-#mobile-turn-left {
-    left: 20px;
-}
-
-#mobile-turn-right {
-    right: 20px;
-}
-
-#mobile-turn-left::before {
-    content: '\f0d9';
-    margin-right: 5px;
-}
-
-#mobile-turn-right::before {
-    content: '\f0da';
-    margin-left: 5px;
-}
-
-@media (hover: none) {
-
-    #mobile-turn-left,
-    #mobile-turn-right {
-        display: block;
-    }
-}
-
 /* Worm styling (body shape)*/
 .game-area div[data-indir='0'][data-outdir='3'],
 .game-area div[data-indir='1'][data-outdir='2'] {

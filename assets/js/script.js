@@ -37,18 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Connect the on-screen controls for mobiles and tablets to wormGame.
-    const turnL = document.getElementById('mobile-turn-left');
-    const turnR = document.getElementById('mobile-turn-right');
-    turnL.addEventListener('pointerdown', (event) => {
-        wormGame.keyDown(37);
-        event.preventDefault();
-    });
-    turnR.addEventListener('pointerdown', (event) => {
-        wormGame.keyDown(39);
-        event.preventDefault();
-    });
-
     // Connect the "New Game" button on the page to the wormGame.
     const submitNickname = document.getElementById('submit-nickname');
     const submitButton = document.getElementById('submit-button');
