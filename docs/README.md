@@ -275,9 +275,7 @@ Throughout the project some bugs were fixed:
 
 ### Supported Screens and Browsers
 
-- 
-- 
-- 
+- The game supports screen sizes from large desktops to small phones. The website layout changes to best fit on the screen it is displayed on.
 
 ## Deployment
 
