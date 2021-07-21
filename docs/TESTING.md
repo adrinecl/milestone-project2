@@ -1,18 +1,25 @@
 ### Test cases (user story based with screenshots)
 
 **1. As a First Time Visitor, I want to immediately understand the main purpose of the site and if I belong to the audience it targets.**
+![Game header](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_game-header.jpg)
 
 **2. I want to be able to quickly understand the game controls and mechanics in order to enjoy playing the game.**
+![Game Menu - sound off](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_game-menu-sound-off.jpg)
+
+![Game Menu - sound on](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_game-menu-sound-on.jpg)
 
 **3. I want to find more information about the game and to be able to consult the game instructions.**
+![About the Game & How to Play](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_about-game.jpg)
 
 **4. I want to be able to see my score as I play the game.**
+![Game Menu - score and level](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_game-menu-sound-on.jpg)
 
 **5. I want to be able to be challenged with harder levels as I progress.**
 
 **6. I would like to play a simple game, with a fairly short play time, but high entertaining value.**
 
 **7. I want to see my final score and how that compares to other people.**
+![Leaderboard](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_leaderboard.jpg)
 
 **8. I want to have fun and feel inclined to play it again or at a later time.**
 
