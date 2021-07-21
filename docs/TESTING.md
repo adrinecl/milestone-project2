@@ -16,13 +16,15 @@
 
 **5. I want to be able to be challenged with harder levels as I progress.**
 
+
 **6. I would like to play a simple game, with a fairly short play time, but high entertaining value.**
+![Gameplay screenshot](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_gameplay-screenshot.jpg)
 
 **7. I want to see my final score and how that compares to other people.**
 ![Leaderboard](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_leaderboard.jpg)
 
 **8. I want to have fun and feel inclined to play it again or at a later time.**
-
+![Footer](https://github.com/adrinecl/milestone-project2/blob/master/docs/images/gummy-worms_testing_footer.jpg)
 
 ### Fixed Bugs
 **1. "Game Over" screen issues**
