@@ -184,11 +184,6 @@ class WormGame {
         this.level = 1;
         this.levelLengthGoal = 5;
         this.speed = 200;
-        this.startNewLevel();
-        this.invokeCallback();
-    }
-
-    startNewLevel() {
         this.candy = [];
         this.createNewWorm();
         this.createNewCandy();
@@ -196,6 +191,11 @@ class WormGame {
         this.resetGrid();
         this.placeWorm();
         this.placeCandy();
+        this.startNewLevel();
+        this.invokeCallback();
+    }
+
+    startNewLevel() {
         this.resetGameTimer();
         this.startGameTimer();
         this.playAudio('new_level');
