@@ -499,3 +499,12 @@ body p {
     padding: 10px;
     margin: 0 auto;
 }
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 767px) {
+    .container-footer {
+        height: initial;
+        flex-direction: column;
+        padding: 0;
+    }
+}
