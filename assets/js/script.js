@@ -87,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     submitButton.addEventListener('click', () => {
         if (!submitButton.disabled) {
             leaderboard.saveScore(submitNickname.value, wormGame.score);
+            mainMenu.classList.add('show-leaderboard');
             submitNickname.disabled = true;
             submitButton.disabled = true;
         }
