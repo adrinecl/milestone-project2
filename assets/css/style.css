@@ -395,6 +395,7 @@ body p {
 .game-area div[data-candy='3']::before,
 .game-area div[data-candy='4']::before {
     content: '\f004';
+    display: block;
     font-family: 'Font Awesome 5 Free';
     font-size: 20px;
     font-weight: 900;
@@ -516,5 +517,32 @@ body p {
         height: initial;
         flex-direction: column;
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 443px) {
+    .game-area {
+        height: calc(var(--rows) * 14px);
+        width: calc(var(--cols) * 14px);
+    }
+
+    .game-area .game-over {
+        font-size: 32px;
+        line-height: 280px;
+    }
+
+    .game-area div {
+        height: 14px;
+        width: 14px;
+    }
+
+    .game-area div[data-candy='0']::before,
+    .game-area div[data-candy='1']::before,
+    .game-area div[data-candy='2']::before,
+    .game-area div[data-candy='3']::before,
+    .game-area div[data-candy='4']::before {
+        font-size: 14px;
+        line-height: 14px;
+        width: 14px;
     }
 }

@@ -1,4 +1,4 @@
-# Gummy Worms Game
+# Gummy Worms! Game
 
 [View the live project here.](https://adrinecl.github.io/milestone-project2/)
 
@@ -7,7 +7,7 @@
 
 ## About the Game
 
-"Gummy Worms" is an online game inspired on the classic "Snake" game, but in bright colors!
+"Gummy Worms!" is an online game inspired on the classic "Snake" game, but in bright colors!
 It is designed to entertain busy people that have no time for long gaming hours, full of involvement and commitment.
 This game is the perfect break for the nostalgic busy millenial parent, but people of all ages will find it easy-going and enjoyable.
 
@@ -44,7 +44,7 @@ Although it is a simple game, in comparison to what is available today, this gam
 <details>
 <summary>Business Goals</summary>
 The main goal of the website is to offer a game to attract players. 
-This is the first ever developed game for "Gummy Worms" and it runs on the browser.
+This is the first ever developed game for "Gummy Worms!" and it runs on the browser.
 The game is free, but this is a good way to test for features before potentially developing it further or even creating a paid version. Developing and deploying a game in this manner can save time, by just "shipping it" with the MVP (minimun viable product) and later iterating and improving it little by little.
 
 **Audience:** the game targets mainly busy nostalgic "millenials" - people in the age range 25-40. 
@@ -54,7 +54,7 @@ While most people all over the world alrealdy know somewhat how to play this gam
 
 <details>
 <summary>Customer Goals</summary>
-Prospective players / first website visitors: get to know the "Gummy Worms" game, decide to play and enjoy the playing experience. The game should instill the desire to play again immediately after a game session or at a later time.
+Prospective players / first website visitors: get to know the "Gummy Worms!" game, decide to play and enjoy the playing experience. The game should instill the desire to play again immediately after a game session or at a later time.
 One main goal is for the player to have such a fun experience that they will recommend it to friends and family, by sharing the link of the game.
 
 In the future, after testing the free version, the players might be able to have a paid version available with extra fun features.
@@ -98,7 +98,7 @@ Other features can be implemented, like the paid version with extra fun features
 
 The game is free and it runs on the browser on a single page so the user can stay on the website and not navigate away, providing few steps for the user to make a decision to play the game.
 
-The most importent content is large and centered, which is the game area.
+The most important content is large and centered, which is the game area.
 Other relevant information should be displayed in a consistent and intuitive manner right above the main game area, so that it grabs the attention of the user. 
 
 The users can easily start a new game, by clicking on the "New Game" button on the menu right above the game area. There the player will also find the status of their current game (level, player's nickname, current score), game settings (toggle sound on or off), be able to see the 10 highest scores on the Leaderboard and read more about the game controls, objectives, rules and the game itself, by accessing the "help" option.
@@ -227,7 +227,10 @@ This section illustrates the first draft of the website and how the information 
 10. [Mixkit](https://mixkit.co/free-sound-effects/game/)
    - This website provided the free sound effects used in the game.
 
-11. [Am I Responsive?](http://ami.responsivedesign.is/)
+11. [Back4App](https://www.back4app.com/)
+   - This website provided the hosting of score data for the leaderboard. It uses Parse Server, which is an open source Backend-as-a-Service(BaaS) framework initially developed by Facebook.
+
+12. [Am I Responsive?](http://ami.responsivedesign.is/)
    - This website was used to check responsiveness and for the mockup generation in the beginning this README file.
 </details>
 
@@ -241,6 +244,9 @@ No errors were returned when passing through the official [W3C Markup Validator]
 #### CSS
 No errors were found when passing through the official [W3C CSS Validator]().
 - [W3C CSS Validator Results](**ADD LINK LATER**).
+#### JavaScript
+No errors were found when passing through the official []().
+- [Validator Results](**ADD LINK LATER**).
 
 ### Test Cases
 
@@ -307,6 +313,9 @@ Main sources used for consultation and troubleshooting:
 2. [MDN Web Docs](https://developer.mozilla.org/en-US/)
 - Mainly for CSS syntax help and troubleshooting.
 
+3. [Back4App](https://www.back4app.com/docs/get-started/welcome)
+- Documentation for help and troubleshooting.
+
 #### Content
 
 - All design choices, color palette and concept created by the developer.
@@ -314,7 +323,6 @@ Main sources used for consultation and troubleshooting:
 
 #### Media
 
-- The media used on the website are free to use.[Pexels](https://www.pexels.com).
 - The free sound effects used in the game are from [Mixkit](https://mixkit.co/free-sound-effects/game/).
 
 ### Acknowledgements
